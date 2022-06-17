@@ -122,8 +122,22 @@ input{
 
     /*----------- Intro ------------*/
 
-.intro-inner {
+.intro {
     background-color: #2F303A;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.intro-inner {
+   text-align: center; 
+   padding: 200px 0;
+}
+
+.intro-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .intro-title {
@@ -159,6 +173,10 @@ input{
 }
 
 /*----------- Esplly --------------*/
+
+.esplly-inner {
+    
+}
 
 .esplyy-list-title {
     font-size: 14px;
