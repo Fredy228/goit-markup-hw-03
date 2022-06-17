@@ -1,0 +1,266 @@
+/*  ------ Fonts for using -------
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Переменые */
+:root {
+    /* Главный цвет текста */
+    --color-main-text: #212121; 
+
+    /* Второстепенный цвет текста */
+    --color-secondary-text: #757575;
+
+    /* Цвет темы сайта */
+    --color-theme: #2196F3; 
+
+    /* Цвет при наведении кнопки intro */
+    --color-btn-hover: #188CE8; 
+}
+
+/*----- Обнуление css -------*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--color-main-text);
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+p, li, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+/*------------- Header ------------*/
+
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-text > span {
+    color: var(--color-theme);
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.link-style {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav-item-link {
+    color: var(--color-main-text);
+}
+
+.address-item-link {
+    color: var(--color-secondary-text);
+}
+
+.link-style:hover {
+    color: var(--color-theme);
+}
+
+.current-link {
+    color: var(--color-theme);
+}
+
+/*--------- Main -----------*/
+
+    /*----------- Intro ------------*/
+
+.intro-inner {
+    background-color: #2F303A;
+}
+
+.intro-title {
+    font-size: 44px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 650px;
+    text-align: center;
+    color: white;
+}
+
+.btn-main-style {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+    border: none;
+    border-radius: 4px;
+}
+
+.intro-btn {
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-theme);
+    padding: 10px 32px;
+    line-height: 1.8;
+    transition: background-color 0.1s linear;
+    cursor: pointer;
+    font: inherit;
+}
+
+.intro-btn:hover {
+    background-color: var(--color-btn-hover);
+}
+
+/*----------- Esplly --------------*/
+
+.esplyy-list-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+.esplyy-list-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-secondary-text);
+    width: 270px;
+}
+
+/*------------ About -----------*/
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*--------- Team ------------*/
+
+.team-inner {
+    background-color: #F5F4FA;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list-item {
+    background-color: white;
+    text-align: center;
+    width: 270px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px #757575;
+    margin-bottom: 10px;
+}
+
+.team-list-item > h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-main-text);
+    margin: 30px auto 10px auto;
+}
+
+.team-list-item > p {
+    font-size: 16px;
+    color: var(--color-secondary-text);
+    padding-bottom: 30px;
+}
+
+/*------- Portfolio -------*/
+
+
+
+.portfolio-list-item {
+    margin-bottom: 34px;
+}
+
+.portfoilo-filter-btn {
+    line-height: 1.6;
+    color: var(--color-main-text);
+    background-color: #F5F4FA;
+    padding: 6px 22px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+}
+
+.portfoilo-filter-btn:hover {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.current-btn {
+    background-color: var(--color-theme);
+    color: #fff;
+    box-shadow: 0 3px 3px #7575758b;
+}
+
+.portf-title {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.portf-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-secondary-text);
+}
+
+
+/*--------- Footer ------------*/
+
+.footer-inner {
+    background-color: #2F303A;
+}
+
+.logo-text.footer {
+    color: white;
+}
+
+.footer-item-text {
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    color: white;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.1s linear;
+}
