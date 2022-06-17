@@ -175,14 +175,27 @@ input{
 /*----------- Esplly --------------*/
 
 .esplly-inner {
-    
+    padding: 94px 0;
+}
+
+.esplly-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.esplly-list-item {
+   width: calc((100% - 90px) / 4); 
+   margin-right: 30px;
+}
+
+.esplly-list-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .esplyy-list-title {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    width: 270px;
     margin-bottom: 10px;
 }
 
@@ -190,10 +203,27 @@ input{
     font-size: 14px;
     line-height: 1.7;
     color: var(--color-secondary-text);
-    width: 270px;
 }
 
 /*------------ About -----------*/
+
+.about-inner {
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-list-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.about-list-item:nth-child(3n) {
+    margin-right: 0;
+}
 
 .about-title {
     font-size: 36px;
