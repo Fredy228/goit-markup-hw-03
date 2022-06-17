@@ -122,10 +122,13 @@ input{
 
     /*----------- Intro ------------*/
 
-.intro {
-    background-color: #2F303A;
+.width-website {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.intro {
+    background-color: #2F303A;
 }
 
 .intro-inner {
@@ -234,8 +237,26 @@ input{
 
 /*--------- Team ------------*/
 
-.team-inner {
+.team {
     background-color: #F5F4FA;
+}
+
+.team-inner {
+    padding: 94px 0;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-list-item {
+    width: calc((100% - 90px) / 4); 
+    margin-right: 30px;
+}
+
+.team-list-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .team-title {
@@ -313,12 +334,29 @@ input{
 
 /*--------- Footer ------------*/
 
-.footer-inner {
+.footer {
     background-color: #2F303A;
+}
+
+.footer-inner {
+    padding: 60px 0;
 }
 
 .logo-text.footer {
     color: white;
+    padding: 0;
+}
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.address-list-item {
+    margin-bottom: 9px;
+}
+
+.address-list-item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-item-text {
