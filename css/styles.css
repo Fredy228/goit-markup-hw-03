@@ -52,7 +52,16 @@ input{
     width: 100%;
 }
 
+.width-website {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /*------------- Header ------------*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-inner {
     display: flex;
@@ -121,11 +130,6 @@ input{
 /*--------- Main -----------*/
 
     /*----------- Intro ------------*/
-
-.width-website {
-    max-width: 1600px;
-    margin: 0 auto;
-}
 
 .intro {
     background-color: #2F303A;
@@ -290,7 +294,18 @@ input{
 
 /*------- Portfolio -------*/
 
+.portfolio-inner {
+    padding: 94px 0 64px 0;
+}
 
+.btn-list {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-list-item {
+    margin: 0 4px;
+}
 
 .portfolio-list-item {
     margin-bottom: 34px;
@@ -319,16 +334,46 @@ input{
     box-shadow: 0 3px 3px #7575758b;
 }
 
+.portf-img-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portf-img-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portf-img-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portf-images {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box-for-cont-card {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 0 24px;
+}
+
 .portf-title {
     font-size: 18px;
     line-height: 2;
     font-weight: bold;
+    padding-top: 20px;
 }
 
 .portf-text {
     font-size: 16px;
     line-height: 1.8;
     color: var(--color-secondary-text);
+    padding: 4px 0 20px 0;
 }
 
 
