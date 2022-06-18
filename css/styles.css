@@ -22,6 +22,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--color-main-text);
+    margin: 0;
 }
 
 *,
@@ -44,7 +45,6 @@ input{
     border: none;
 }
 
-
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -61,6 +61,7 @@ input{
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding: 25px 0;
 }
 
 .header-inner {
@@ -74,8 +75,6 @@ input{
     color: black;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    margin-right: 68px;
-    padding: 25px 0;
 }
 
 .logo-text > span {
@@ -84,6 +83,10 @@ input{
 
 .list-style-none {
     list-style: none;
+}
+
+.nav {
+    margin-left: 93px;
 }
 
 .nav-list {
@@ -99,16 +102,22 @@ input{
 }
 
 .nav-list-item {
-    margin: 0 25px;
+    margin-right: 50px;
+}
+
+.nav-list-item:last-child {
+    margin: 0;
 }
 
 .nav-item-link {
     color: var(--color-main-text);
+    padding: 32px 0;
 }
 
 .address-list {
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
 
 .address-list-item:first-child {
@@ -117,6 +126,7 @@ input{
 
 .address-item-link {
     color: var(--color-secondary-text);
+    padding: 32px 0;
 }
 
 .link-style:hover {
@@ -133,11 +143,11 @@ input{
 
 .intro {
     background-color: #2F303A;
+    padding: 200px 0;
 }
 
 .intro-inner {
    text-align: center; 
-   padding: 200px 0;
 }
 
 .intro-title-box {
@@ -172,7 +182,7 @@ input{
     line-height: 1.8;
     transition: background-color 0.1s linear;
     cursor: pointer;
-    font: inherit;
+    font-family: inherit;
 }
 
 .intro-btn:hover {
@@ -181,7 +191,7 @@ input{
 
 /*----------- Esplly --------------*/
 
-.esplly-inner {
+.esplly {
     padding: 94px 0;
 }
 
@@ -214,7 +224,7 @@ input{
 
 /*------------ About -----------*/
 
-.about-inner {
+.about {
     padding-bottom: 94px;
 }
 
@@ -243,9 +253,6 @@ input{
 
 .team {
     background-color: #F5F4FA;
-}
-
-.team-inner {
     padding: 94px 0;
 }
 
@@ -279,22 +286,25 @@ input{
     margin-bottom: 10px;
 }
 
-.team-list-item > h3 {
+.box-team-info {
+    padding: 30px;
+}
+
+.team-name {
     font-size: 16px;
     font-weight: 500;
     color: var(--color-main-text);
-    margin: 30px auto 10px auto;
+    margin: 0 auto 10px auto;
 }
 
-.team-list-item > p {
+.team-profes {
     font-size: 16px;
     color: var(--color-secondary-text);
-    padding-bottom: 30px;
 }
 
 /*------- Portfolio -------*/
 
-.portfolio-inner {
+.portfolio {
     padding: 94px 0 64px 0;
 }
 
@@ -318,7 +328,7 @@ input{
     padding: 6px 22px;
     transition: all 0.1s linear;
     cursor: pointer;
-    font: inherit;
+    font-family: inherit;
     font-weight: 500;
 }
 
@@ -359,21 +369,20 @@ input{
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    padding: 0 24px;
+    padding: 20px 24px;
 }
 
 .portf-title {
     font-size: 18px;
     line-height: 2;
     font-weight: bold;
-    padding-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portf-text {
     font-size: 16px;
     line-height: 1.8;
     color: var(--color-secondary-text);
-    padding: 4px 0 20px 0;
 }
 
 
@@ -381,9 +390,6 @@ input{
 
 .footer {
     background-color: #2F303A;
-}
-
-.footer-inner {
     padding: 60px 0;
 }
 
@@ -396,12 +402,12 @@ input{
     margin-top: 20px;
 }
 
-.address-list-item {
+.footer-list-item {
     margin-bottom: 9px;
 }
 
-.address-list-item:last-child {
-    margin-bottom: 0;
+.footer-list-item:last-child {
+    margin: 0;
 }
 
 .footer-item-text {
@@ -418,4 +424,5 @@ input{
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     transition: color 0.1s linear;
+
 }
